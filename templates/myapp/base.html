@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    {% block title %}
+    <title>base title</title>
+      
+    {% endblock  %}
+    
 </head>
+<!--{% block body_block %}
 <body>
+    <h1>welcom to base body html</h1>
     
 </body>
+  
+{% endblock  %}-->
+<body>
+    <h1>Navigation Bar</h1>
+    {% block content %}
+       <h2>Welcome to Base.html</h2>
+    {% endblock %}
+</body>
+
 </html>
